@@ -1,0 +1,58 @@
+@Tutorial(time: 2) {
+    @Intro(title: "Tips for creating proper DocC documentations") {
+        This are few tips to create describe your overview discussion, swift, code, function and params Documentation
+        
+        @Image(source: Car1 , alt: "Sample image of Car1")
+    }
+    
+    @Section(title: "Here we will get to know how to add comments into the swift file for creating DocC Reference Doc") {
+        @ContentAndMedia() {
+            Below are the steps
+        }
+        
+        @Steps {
+            @Step {
+                A Page without any documentation.
+                
+                @Code(name: "Car.swift", file: Car00.swift) {
+                    @Image(source: "00", alt: "Car1")
+                }
+            }
+            
+            @Step {
+                Adding Overview just below the Name.
+                
+                Swift-DocC uses the first line of a documentation comment as the abstract or summary sentence for the page.
+                
+                @Code(name: "Car.swift", file: Car01.swift) {
+                    @Image(source: "01", alt: "Car1")
+                }
+            }
+            
+            @Step {
+                Adding Discussions below the overview.
+                
+                The next paragraph is used as a Discussion section.
+                @Code(name: "Car.swift", file: Car02.swift) {
+                    @Image(source: "02", alt: "Car2")
+                }
+            }
+            
+            @Step {
+                Adding Function Parameter and Return type description.
+                
+                @Code(name: "Car.swift", file: Car03.swift) {
+                    @Image(source: "03", alt: "Car3")
+                }
+            }
+            
+            @Step {
+                Adding Swift Code.
+                
+                @Code(name: "Car.swift", file: Car04.swift) {
+                    @Image(source: "04", alt: "Car1")
+                }
+            }
+        }
+    }
+}

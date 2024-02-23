@@ -1,0 +1,17 @@
+@Tutorials(name: "Swift DocC Tutorial Guide") {
+    @Intro(title: "Swift DocC Tutorial Guide") {
+        Hello Swift Geeks.
+        **This is the DocC tutorial guide to demo DocC.**
+        
+        @Image(source: DocC_Icon, alt: "Car1")
+    }
+    
+    @Chapter(name: "DocC Tutorial Guide") {
+        A Tutorial to learn how to create DocC documentation while coding with proper comments
+        
+        @Image(source: Car1, alt: "Car")
+        
+        @TutorialReference(tutorial: "doc:Creating-Document")
+
+    }
+}
