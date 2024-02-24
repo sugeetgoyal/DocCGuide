@@ -18,10 +18,10 @@ mkdir docs
 #$(xcrun --find docc) process-archive transform-for-static-hosting ~/Desktop/DocCGuide.doccarchive --hosting-base-path DocCGuide --output-path ~/Desktop/Docs
 
 for ARCHIVE in doc_archives/*.doccarchive; do
-    cmd() {
-        echo "$ARCHIVE" | awk -F'.' '{print $1}' | awk -F'/' '{print tolower($2)}'
-    }
-    ARCHIVE_NAME="$(cmd)"
+#    cmd() {
+#        echo "$ARCHIVE" | awk -F'.' '{print $1}' | awk -F'/' '{print tolower($2)}'
+#    }
+#    ARCHIVE_NAME="$(cmd)"
     echo "Processing Archive: $ARCHIVE"
     $(xcrun --find docc) process-archive transform-for-static-hosting "$ARCHIVE" --hosting-base-path DocCGuide --output-path docs
 done
